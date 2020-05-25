@@ -2,7 +2,7 @@ import React from "react";
 
 import "./_button.scss";
 
-const button = (props) => (
+const Button = (props) => (
   <button
     disabled={props.disabled}
     className={["button", props.btnType].join(" ")}
@@ -12,4 +12,4 @@ const button = (props) => (
   </button>
 );
 
-export default button;
+export default Button;

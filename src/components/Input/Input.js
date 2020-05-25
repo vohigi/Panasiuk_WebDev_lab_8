@@ -2,7 +2,7 @@ import React from "react";
 
 import "./_input.scss";
 
-const input = (props) => {
+const Input = (props) => {
   let inputElement = null;
   const inputClasses = ["inputElement"];
 
@@ -65,4 +65,4 @@ const input = (props) => {
   );
 };
 
-export default input;
+export default Input;

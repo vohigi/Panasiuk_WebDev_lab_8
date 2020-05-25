@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Route, Switch, withRouter, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
-import Layout from "./hoc/layout";
-import Logout from "./pages/logout";
+import Layout from "./hoc/Layout";
+import Logout from "./pages/logout/Logout";
 import Login from "./pages/login/Login";
-import Home from "./pages/home";
+import Home from "./pages/home/Home";
 import * as actions from "./redux/actions/index";
 import PrivateRoute from "./components/PrivateRoute";
 
@@ -24,6 +24,7 @@ class App extends Component {
           setAuthRedirectPath={this.props.onSetAuthRedirectPath}
           userId={this.props.userId}
         />
+        <Route path="/logout" component={Logout} />
         <Redirect to="/" />
       </Switch>
     );
